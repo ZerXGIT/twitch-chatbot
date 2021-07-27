@@ -4,7 +4,7 @@ import com.github.philippheuer.events4j.simple.SimpleEventHandler;
 import com.github.twitch4j.TwitchClient;
 import com.github.twitch4j.chat.events.channel.ChannelMessageEvent;
 import com.github.twitch4j.helix.domain.ModeratorList;
-import de.zerx.handler.UserHandler;
+import de.zerx.clienthandler.UserObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class TitleChangeCommand {
     public void onChannelMessageEvent(ChannelMessageEvent event) {
         if (event.getMessage().startsWith("!title")) {
 
-            UserHandler User = new UserHandler();
+            UserObject User = new UserObject();
             String ChannelName = event.getChannel().getName();
 
             List<String> ModeratorNameList = new ArrayList<>();

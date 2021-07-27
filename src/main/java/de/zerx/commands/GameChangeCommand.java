@@ -6,8 +6,8 @@ import com.github.twitch4j.chat.events.channel.ChannelMessageEvent;
 import com.github.twitch4j.helix.domain.ChannelInformation;
 import com.github.twitch4j.helix.domain.Game;
 import com.github.twitch4j.helix.domain.ModeratorList;
-import de.zerx.handler.ClientHandler;
-import de.zerx.handler.UserHandler;
+import de.zerx.clienthandler.ClientHandler;
+import de.zerx.clienthandler.UserObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class GameChangeCommand {
 
             String ChannelName = event.getChannel().getName();
 
-            UserHandler ush = new UserHandler();
+            UserObject ush = new UserObject();
             event.getUser();
 
             List<String> modlist = new ArrayList<>();

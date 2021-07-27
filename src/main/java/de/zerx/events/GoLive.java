@@ -2,7 +2,7 @@ package de.zerx.events;
 
 import com.github.philippheuer.events4j.simple.SimpleEventHandler;
 import com.github.twitch4j.events.ChannelGoLiveEvent;
-import de.zerx.handler.ClientHandler;
+import de.zerx.clienthandler.ClientHandler;
 
 /**
  * Created by Till O. aka. ZerX

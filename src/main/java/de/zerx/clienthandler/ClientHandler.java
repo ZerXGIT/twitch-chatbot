@@ -1,4 +1,4 @@
-package de.zerx.handler;
+package de.zerx.clienthandler;
 
 import com.github.philippheuer.events4j.simple.SimpleEventHandler;
 import com.github.twitch4j.TwitchClient;
@@ -48,7 +48,7 @@ public class ClientHandler {
     }
 
     public void registerStreamer() {
-        for (UserHandler user : UserHandler.Users) {
+        for (UserObject user : UserObject.Users) {
             if (!(TwitchClient.getChat().isChannelJoined(user.Name))) {
                 TwitchClient.getChat().joinChannel(user.getName());
             }

@@ -2,8 +2,8 @@ package de.zerx.features;
 
 import com.github.twitch4j.TwitchClient;
 import com.github.twitch4j.helix.domain.StreamList;
-import de.zerx.handler.ClientHandler;
-import de.zerx.handler.UserHandler;
+import de.zerx.clienthandler.ClientHandler;
+import de.zerx.clienthandler.UserObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,9 +36,9 @@ public class BrodcastMessages {
             @Override
             public void run() {
 
-                ArrayList<UserHandler> Users = UserHandler.Users;
+                ArrayList<UserObject> Users = UserObject.Users;
 
-                for (UserHandler user : Users) {
+                for (UserObject user : Users) {
                     //TODO: Überprüfen ob dies ding funktioniert (Online dingens)!
                     if (isStreamerOnline(user.getName())) {
                         tc.getChat().sendMessage(user.getName(), message[message_int]);

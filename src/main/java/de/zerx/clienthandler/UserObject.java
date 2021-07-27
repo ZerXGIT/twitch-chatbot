@@ -1,4 +1,4 @@
-package de.zerx.handler;
+package de.zerx.clienthandler;
 
 import java.util.ArrayList;
 
@@ -8,29 +8,29 @@ import java.util.ArrayList;
  * Project name: Twitchbot(1)
  * This file is created at 05.06.2021 23:20
  */
-public class UserHandler {
+public class UserObject {
 
-    public static ArrayList<UserHandler> Users = new ArrayList<>();
+    public static ArrayList<UserObject> Users = new ArrayList<>();
     String Name;
     String Token;
 
-    public UserHandler(String Name, String Token) {
+    public UserObject(String Name, String Token) {
         this.Name = Name;
         this.Token = Token;
     }
 
-    public UserHandler() {
+    public UserObject() {
     }
 
     public void addUser() {
-        Users.add(new UserHandler(Name, Token));
+        Users.add(new UserObject(Name, Token));
     }
 
     public void addUser(String Name, String Token) {
-        Users.add(new UserHandler(Name, Token));
+        Users.add(new UserObject(Name, Token));
     }
 
-    public ArrayList<UserHandler> getUsers() {
+    public ArrayList<UserObject> getUsers() {
         return Users;
     }
 
@@ -43,7 +43,7 @@ public class UserHandler {
     }
 
     public String getToken(String Name) throws NullPointerException {
-        for (UserHandler user : Users) {
+        for (UserObject user : Users) {
             if (user.getName().equalsIgnoreCase(Name)) return user.getToken();
         }
         return null;
