@@ -2,8 +2,8 @@ package de.zerx.features;
 
 import com.github.twitch4j.TwitchClient;
 import com.github.twitch4j.helix.domain.StreamList;
-import de.zerx.clienthandler.ClientHandler;
-import de.zerx.clienthandler.UserObject;
+import de.zerx.userhandler.UserHandler;
+import de.zerx.userhandler.UserObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 
 public class BrodcastMessages {
-    TwitchClient tc = ClientHandler.TwitchClient;
+    TwitchClient tc = UserHandler.TwitchClient;
 
     //TODO: Brodcast nachrichten hinzufügen!
     String[] message = {"Holt euch BetterTwitchTV ► https://bit.ly/1xpxMNA und FrankerFaceZ ► https://bit.ly/1II1E2o für tolle Smileys und weitere Vorteile! (für die Smileys einfach gifs in bttv anmachen)", ""};

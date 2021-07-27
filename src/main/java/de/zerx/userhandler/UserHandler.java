@@ -1,4 +1,4 @@
-package de.zerx.clienthandler;
+package de.zerx.userhandler;
 
 import com.github.philippheuer.events4j.simple.SimpleEventHandler;
 import com.github.twitch4j.TwitchClient;
@@ -16,11 +16,11 @@ import feign.Logger;
  * This file is created at 19.03.2021 16:00
  */
 
-public class ClientHandler {
+public class UserHandler {
 
     public static TwitchClient TwitchClient;
 
-    public ClientHandler() {
+    public UserHandler() {
     }
 
     public void init() {

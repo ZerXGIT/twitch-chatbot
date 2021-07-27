@@ -1,4 +1,4 @@
-package de.zerx.clienthandler;
+package de.zerx.userhandler;
 
 import java.util.ArrayList;
 

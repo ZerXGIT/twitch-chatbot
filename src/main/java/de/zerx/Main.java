@@ -1,7 +1,7 @@
 package de.zerx;
 
-import de.zerx.clienthandler.ClientHandler;
-import de.zerx.clienthandler.UserObject;
+import de.zerx.userhandler.UserHandler;
+import de.zerx.userhandler.UserObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,7 +28,7 @@ public class Main {
         UserObject.addUser("ZerXDElive", "6f1vqycesr8zk95zp9arttufiokaxc");
         //UserObject.addUser("andredelive", "9bjvabolae4o6uk787rglqrl1a56y3");
 
-        ClientHandler clienthandler = new ClientHandler();
+        UserHandler clienthandler = new UserHandler();
         clienthandler.init();
         clienthandler.registerStreamer();
         clienthandler.registerEvents();

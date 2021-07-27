@@ -2,7 +2,7 @@ package de.zerx.events;
 
 import com.github.philippheuer.events4j.simple.SimpleEventHandler;
 import com.github.twitch4j.events.ChannelGoLiveEvent;
-import de.zerx.clienthandler.ClientHandler;
+import de.zerx.userhandler.UserHandler;
 
 /**
  * Created by Till O. aka. ZerX
@@ -23,7 +23,7 @@ public class GoLive {
         String channelName = event.getChannel().getName();
 
         //TODO: Bessere nachricht für live gehen!
-        ClientHandler.TwitchClient.getChat().sendMessage(channelName, channelName + " ist jetzt Live!");
+        UserHandler.TwitchClient.getChat().sendMessage(channelName, channelName + " ist jetzt Live!");
 
     }
 
