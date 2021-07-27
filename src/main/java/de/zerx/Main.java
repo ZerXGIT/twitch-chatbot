@@ -25,8 +25,7 @@ public class Main {
 
         UserObject UserObject = new UserObject();
 
-        UserObject.addUser("ZerXDElive", "6f1vqycesr8zk95zp9arttufiokaxc");
-        //UserObject.addUser("andredelive", "9bjvabolae4o6uk787rglqrl1a56y3");
+        UserObject.addUser("<User>", "<Twitch Token>");
 
         UserHandler clienthandler = new UserHandler();
         clienthandler.init();
