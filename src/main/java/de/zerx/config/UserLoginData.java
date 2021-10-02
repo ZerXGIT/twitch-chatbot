@@ -21,8 +21,8 @@ public class UserLoginData {
     public static OAuth2Credential credential;
 
     static {
-        ClientID = "74ne4w6ijxkgscc11qvgftll0da4vx";
-        ClientSecret = "uvkga2jx58jfs4xx5wxto7rfr9y1wv";
-        credential = new OAuth2Credential("twitch", "5d2vmtc6ydl39bgocu9096rjt8r6gq");
+        ClientID = "";
+        ClientSecret = "";
+        credential = new OAuth2Credential("twitch", "");
     }
 }
